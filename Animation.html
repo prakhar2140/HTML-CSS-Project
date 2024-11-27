@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background: red;
+            /* Margin: top-bottom Left right */
+            margin: auto;
+            animation-name: abc1;
+            animation-duration: 1s;
+            animation-duration: ease-out;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+
+
+        }
+        @keyframes abc1{
+            0%{
+                transform: rotateZ(0deg);
+            }
+            100%{
+                transform: rotateZ(360deg);
+            }
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background: orange;
+            /* Margin: top-bottom Left right */
+            margin: auto;
+            animation-name: abc2;
+            animation-duration: 1s;
+            animation-duration: ease-in;
+            animation-timing-function: linear;
+            animation-iteration-count: 2;
+        }
+        @keyframes abc2{
+            0%{
+                transform: rotateZ(0deg);
+            }
+            25%{
+                background: green;
+            }
+            50%{
+                background: blue;
+            }
+            100%{
+                transform: rotateZ(360deg);
+            }
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            background: green;
+            /* Margin: top-bottom Left right */
+            /* margin:  auto; */
+            animation-name: abc3;
+            animation-duration: 1s;
+            animation-duration: ease-out;
+            animation-timing-function: linear;
+            animation-iteration-count: 2;
+            animation-direction: alternate;            
+        }
+
+
+
+
+        @keyframes abc3{
+            0%{
+                transform: translate(0px);
+            }
+            100%{
+                transform: translate(1000px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+</html>

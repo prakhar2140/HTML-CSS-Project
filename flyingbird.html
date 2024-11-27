@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spite-sheet animation</title>
+<style>
+    .a1{
+        background-image: url("img/twitter-bird-sprite.png");
+        height: 140px;
+        width: 150px;
+        animation-name: abc;
+        animation-duration: 1s;
+        background-repeat: no-repeat;
+        animation-timing-function: steps(3);
+        animation-iteration-count: infinite;
+        background: cover;
+        transform: rotateZ(45deg);
+
+        
+    }
+    @keyframes abc{
+        0%{
+            background-position: 0px 0px;
+        }
+        100%{
+            background-position: -460px 0px;
+        }
+    }
+    .birdcontainer{
+        position: relative;
+        animation: xyz;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes xyz{
+        from{
+            left:0%;
+
+        }
+        to{
+            left: 100%;
+        }
+    }
+    .a2{
+        width: 170px;
+        height: 111px;
+        margin-top: 20px;
+        background-image: url('img/Screenshot\ 2024-01-15\ 201652.png');
+        animation-name: kgf;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: steps(8);
+        background: cover;
+    }
+    @keyframes kgf{
+        0%{
+            background-position: 0px 0px;
+        }
+        100%{
+            background-position: -460px 0px;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="birdcontainer">
+        <div class="a1"></div>
+        <div class="a2"></div>
+    </div>
+</body>
+</html>

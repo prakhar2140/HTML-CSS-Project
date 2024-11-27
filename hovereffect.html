@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS hover effect -Animation assignment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<style>
+    .common{
+        width: 280px;
+        height: 212px;
+        float: left;
+    }
+    .box{
+
+        background-image: url("./img/1.jpg");
+        background-size: cover;
+        box-shadow: 0px 0px 10px 5px rgb(0, 0, 0, 0.5);
+        position: relative; 
+        overflow: hidden;
+        margin: 12px;
+    }
+    .overlay{
+        background: rgba(0, 0, 0, 0.5);
+        position: absolute; 
+        top: -212px;
+        left: 0px;
+        transition-property: all;
+        transition-duration: 0.1s;
+        transition-timing-function: linear;
+        transition-timing-function: ease-in;
+       
+    }    
+    .box:hover .overlay{
+        top: 0px;
+       
+    }
+    .overlay > a{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;   
+        border-radius: 50px;  
+        background-color: #fff;
+        position: absolute;
+        text-align: center;
+        top: 81px;
+        left: 80px;
+        text-decoration: none;
+        
+    }
+    .banchor{
+        left: 140px !important;
+    }
+    
+</style>
+<body>
+    <div class="common box">
+        <div class="common overlay">
+            <a href="#"><i class="fa-sharp fa-solid fa-face-smile"></i></i></a>
+            <a class="banchor" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+    </div>
+    <div class="common box">
+        <div class="commmon overlay overlay5">
+            <a class="a1" href="#">A</a>
+            <a class="a2" href="#">B</a>
+        </div>
+    </div>
+</body>
+</html>
